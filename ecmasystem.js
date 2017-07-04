@@ -488,7 +488,6 @@ class ECMASystem {
 		/// End initialize or finalize process
 
 		win = this.findWindowByEvent(this.draggingWindows, event);
-		console.log(this.draggingWindows);
 		if (win == null) {
 			// There are NOT any dragging window in current mouse or touch event
 			this.draggingWindows = new Array(); // Clean
