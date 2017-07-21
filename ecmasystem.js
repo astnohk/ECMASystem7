@@ -81,6 +81,7 @@ class ECMASystem {
 		this.WindowZIndexOffset = 100;
 		// Time
 		this.timeClock = null;
+		this.time;
 
 		// Window list
 		this.WindowList = new Array();
@@ -97,7 +98,6 @@ class ECMASystem {
 	// ----- INITIALIZE -----
 	initECMASystem()
 	{
-		let timeClock = setInterval(updateTimeAndBackground, 1000);
 		// Add Window Scroller
 		this.appendWindowScroller();
 		// Event Listener for mouse click or touch
